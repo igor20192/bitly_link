@@ -2,13 +2,13 @@
 
 Установить виртуальное окружение
 
-<python3 -m venv venv>
+    python3 -m venv venv
 
-<pip install -r requirements.txt>
+    pip install -r requirements.txt
 
 Запуск скрипта 
 
-<python bitly.py>
+    <python bitly.py>
 
 При вводе ссылок выводится битлинк на пример такой bit.ly/ABCDE
 При вводе в программу битлинка выведется сумма кликов по нему
