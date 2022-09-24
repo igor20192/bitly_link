@@ -11,7 +11,7 @@ logging.basicConfig(
 )
 
 
-class BitlyLincs:
+class BitlyLinks:
     def __init__(self, token: str) -> None:
         self.url = input("Введите ссылку  : ")
         self.token = token
