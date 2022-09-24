@@ -59,5 +59,5 @@ class BitlyLinks:
 
 token = os.getenv("TOKEN")
 if __name__ == "__main__":
-    b = BitlyLincs(token)
+    b = BitlyLinks(token)
     print(b.is_bitlink())
