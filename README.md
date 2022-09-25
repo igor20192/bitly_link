@@ -3,8 +3,13 @@
 Установить виртуальное окружение
 
     python3 -m venv venv
-    . venv/bin/activate
-     
+ 
+Активировать виртуальное окружение
+
+   . venv/bin/activate
+ 
+Установить все зависимости
+    
     pip install -r requirements.txt
 
 Запуск скрипта 
