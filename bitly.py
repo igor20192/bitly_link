@@ -31,7 +31,7 @@ class BitlyLinks:
 
         except requests.exceptions.RequestException as exc:
             logging.exception("%s", exc.__doc__)
-            return f"ERROR: {exc.__doc__} > Проверьти введенные данные!"
+            return f"ERROR: {exc.__doc__} > Проверьте введенные данные!"
 
     def __count_clicks(self) -> str:
         params = {"units": -1}
@@ -46,7 +46,7 @@ class BitlyLinks:
 
         except requests.exceptions.RequestException as exc:
             logging.exception("%s", exc.__doc__)
-            return f"ERROR: {exc.__doc__} > Проверьти введенные данные!"
+            return f"ERROR: {exc.__doc__} > Проверьте введенные данные!"
 
     def is_bitlink(self) -> str:
         response = requests.get(
