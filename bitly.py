@@ -52,7 +52,7 @@ def is_bitlink(url: str, token: str) -> str:
 
 
 def main() -> None:
-    token = os.getenv("BITLY_TOKEN")
+    token = os.getenv("BITLY_TOKEN ")
     url = input("Введите ссылку  : ")
     print(is_bitlink(url, token))
 
