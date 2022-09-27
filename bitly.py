@@ -43,12 +43,16 @@ def count_clicks(bitlink: str, token: str) -> str:
 
 
 def is_bitlink(url: str, token: str) -> str:
-    response = requests.get(
+    try: 
+     response = requests.get(
         f"https://api-ssl.bitly.com/v4/bitlinks/{url}", headers={"Authorization": token}
-    )
-    if response.ok:
+     )
+     if response.ok:
         return count_clicks(url, token)
-    return shorten_link(url, token)
+     return shorten_link(url, token)
+    except requests.exceptions.RequestException as exc:
+        logging.exception('%s',exc.__doc__)
+        return f'Error: {exc.__doc__}'
 
 
 def main() -> None:
