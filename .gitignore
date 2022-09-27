@@ -1,3 +1,4 @@
 .env
 exc_bitly.log
-bitly_env
+venv
+__pycache__
